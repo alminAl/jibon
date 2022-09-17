@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
+  const [scrolling, setScrolling] = useState(false);
+  const navColorChange = () => {
+    if (window.scrollY >= 100) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+  window.addEventListener("scroll", navColorChange);
   return (
-    <div className="custom-nav sticky-top">
-      <nav className="navbar navbar-expand-lg">
+    <div
+      className={!scrolling ? "custom-nav fixed-top" : "scroll-nav sticky-top"}
+    >
+      <nav className="navbar navbar-expand-xl">
         <div className="container">
           <Link to="/" className="custom-nav-brand">
             JIBON
@@ -59,7 +70,12 @@ const Navigation = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/" className="custom-btn-sm-reverse">
+                <Link
+                  to="/"
+                  className={
+                    !scrolling ? "custom-btn-sm-reverse" : "custom-btn-sm custom-btn-success"
+                  }
+                >
                   donate now
                 </Link>
               </li>

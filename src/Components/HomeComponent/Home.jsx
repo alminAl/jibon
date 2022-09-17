@@ -4,6 +4,8 @@ import Navigation from "../ReuseComponent/Navigation.jsx";
 import Donation from "./Donation.jsx";
 import Hero from "./Hero.jsx";
 import Impact from "./Impact.jsx";
+import NewsEvents from "./NewsEvents.jsx";
+import Programs from "./Programs.jsx";
 import Work from "./Work.jsx";
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
       <Work />
       <Donation />
       <Impact />
+      <Programs />
+      <NewsEvents />
       <Footer />
     </>
   );

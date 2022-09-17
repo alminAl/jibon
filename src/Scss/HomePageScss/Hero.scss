@@ -1,6 +1,31 @@
 #hero-section {
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  height: 100vh;
+  border-bottom: 1px solid #edf2f4;
+  position: relative;
+  .background-img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      object-position: center;
+    }
+  }
   .hero-section {
-    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
