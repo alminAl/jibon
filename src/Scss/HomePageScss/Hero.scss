@@ -1,6 +1,5 @@
 #hero-section {
   height: 100vh;
-  border-bottom: 1px solid #edf2f4;
   position: relative;
   .background-img {
     z-index: -1;
@@ -27,5 +26,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .custom-title {
+      width: 82%;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #hero-section {
+    .hero-section {
+      .custom-title {
+        width: 100%;
+      }
+    }
   }
 }

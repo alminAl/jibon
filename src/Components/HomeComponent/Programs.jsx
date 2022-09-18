@@ -10,7 +10,7 @@ const Programs = () => {
     <div className="section-gap">
       <div className="container">
         <div className="text-center cmb-50">
-          <h3 className="custom-sub-title cmb-10">FEATURED PROGRAMS</h3>
+          <h3 className="custom-sub-title cmb-10">featured programs</h3>
           <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
         </div>
 

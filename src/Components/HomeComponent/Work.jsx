@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
-    <div id="work-section" className="section-gap">
+    <div id="work-section" className="section-gap cpy-25">
       <div className="container">
         <div className="text-center cmb-50">
           <h3 className="custom-sub-title cmb-10">our work</h3>
@@ -22,14 +22,14 @@ const Work = () => {
         </div>
 
         <div className="row justify-content-between align-items-center">
-          <div className="col-md-5 cmt-30 bg-shadow">
+          <div className="col-md-5 cmt-30 box-model p-0">
             <img
               src="https://i.ibb.co/CQ7mkMB/cartoon-kid.png"
-              className="img-fluid cartoon"
+              className="img-fluid work-img"
               alt="img"
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 cpy-25 cpx-25">
             <div className="cmb-25">
               <span className="fw-bold">why</span>
               <h6 className="custom-sub-title cmy-0">school reform</h6>

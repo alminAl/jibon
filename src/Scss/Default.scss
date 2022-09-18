@@ -3,12 +3,14 @@
 // ! color variant
 $primary: #3a86ff;
 $secondary: #00a676;
-$success: #38b000;
+$success: #44b90e;
+$lightSuccess: #60e224;
+// $success: #38b000;
 $info: #3d348b;
-$danger: #d62828;
+$danger: #e63946;
 $warning: #ffb703;
 $white: #ffffff;
-$off_white: #f5f3f4;
+$off_white: #edf2f4;
 $light: #f6fff8;
 $dark: #293241;
 $light_dark: #202c39;
@@ -28,9 +30,8 @@ $beautiful_css_box_shadow_28: rgba(0, 0, 0, 0.16) 0px 3px 6px,
 $beautiful_css_box_shadow_35: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 $beautiful_css_box_shadow_59: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 
-
 // ! transition
-$custom-transition: ease-in-out 0.4s;
+$custom-transition: ease-in-out 0.2s;
 
 // ! text color
 .text-primary {
