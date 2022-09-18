@@ -1,3 +1,4 @@
+@import "../Framework.scss";
 #impact-section {
   .cart {
     position: relative;
@@ -54,6 +55,17 @@
 
     &:hover .under-shutter {
       top: 0;
+    }
+
+    .cart-footer {
+      .custom-icon {
+        font-size: 16px;
+      }
+      .custom-btn-sm-borderless:hover {
+        .custom-icon {
+          color: $white;
+        }
+      }
     }
   }
 }

@@ -1,22 +1,14 @@
 @import "../Framework.scss";
 #work-section {
-  /* position: relative;
-
-  &::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: rgba(56, 176, 0, .3);
-    transform: skewY(-12deg);
-    -webkit-transform: skewY(-12deg);
-    -moz-transform: skewY(-12deg);
-    -ms-transform: skewY(-12deg);
-    -o-transform: skewY(-12deg);
-} */
+  .box-model {
+    background-color: $lightSuccess;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
   .work-img {
     background-color: $white;
     height: 500px;
@@ -54,14 +46,5 @@
   .custom-icon {
     font-size: 50px;
     color: #000;
-  }
-  .box-model {
-    background-color: $lightSuccess;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
   }
 }

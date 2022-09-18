@@ -5,12 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../Scss/HomePageScss/Success.scss";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Success = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     speed: 500,
@@ -47,7 +49,7 @@ const Success = () => {
     <>
       <div id="success-section" className="section-gap">
         <div className="container">
-          <div className="text-center cmb-50">
+          <div className="text-center cmb-20">
             <h3 className="custom-sub-title cmb-10">our success story</h3>
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
           </div>
@@ -55,20 +57,30 @@ const Success = () => {
           <div className="row">
             <Slider {...settings}>
               {testData.map((item) => {
+                const { id, img, detail } = item;
                 return (
-                  <div className="col cmy-40">
+                  <div className="col cmy-40" key={id}>
                     <div className="row justify-content-center align-items-center">
-                      <div className="col-5 cart-content">
-                        <h4 className="cart-title">{item.title}</h4>
-                        <p>{item.detail}</p>
-                        <Link to="/">
-                          <button className="custom-btn-sm custom-btn-light">
+                      <div className="col cmx-20">
+                        <div className="cart-image">
+                          <img src={img} className="img-fluid" alt="img" />
+                        </div>
+
+                        <div className="cart cart-content">
+                          <h4>hasina parker</h4>
+                          <p>{detail}</p>
+                          <Link
+                            to="/"
+                            type="button"
+                            className="custom-btn-sm-borderless"
+                          >
                             read story
-                          </button>
-                        </Link>
-                      </div>
-                      <div className="col-3 cart-image p-0">
-                        <img src={item.img} className="img-fluid" alt="img" />
+                            <FontAwesomeIcon
+                              icon={faAngleDoubleRight}
+                              className="custom-icon cml-10"
+                            />
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

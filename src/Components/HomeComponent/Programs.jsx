@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import testData from "../../testData/test_data.js";
+import "../../Scss/HomePageScss/Programs.scss";
 
 const Programs = () => {
   const testSlice = testData.slice(0, 3);
   return (
-    <div className="section-gap">
+    <div id="programs-section" className="section-gap">
       <div className="container">
         <div className="text-center cmb-50">
           <h3 className="custom-sub-title cmb-10">featured programs</h3>
@@ -35,7 +36,6 @@ const Programs = () => {
                       <FontAwesomeIcon
                         icon={faAngleDoubleRight}
                         className="custom-icon cml-10"
-                        style={{ fontSize: "16px" }}
                       />
                     </Link>
                   </div>

@@ -31,7 +31,6 @@ const NewsEvents = () => {
                         <FontAwesomeIcon
                           icon={faAngleDoubleRight}
                           className="custom-icon cml-10"
-                          style={{ fontSize: "16px" }}
                         />
                       </Link>
                     </div>

@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import testData from "../../testData/test_data.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDoubleRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import "../../Scss/HomePageScss/Impact.scss";
 
 const Impact = () => {
@@ -35,7 +33,6 @@ const Impact = () => {
                           <FontAwesomeIcon
                             icon={faAngleDoubleRight}
                             className="custom-icon cml-10"
-                            style={{ fontSize: "16px" }}
                           />
                         </Link>
                       </div>

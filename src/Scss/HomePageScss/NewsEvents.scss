@@ -1,3 +1,4 @@
+@import "../Framework.scss";
 #news-event-section {
   .cart {
     display: flex;
@@ -11,6 +12,17 @@
       object-position: center;
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px;
+    }
+
+    .cart-footer {
+      .custom-icon {
+        font-size: 16px;
+      }
+      .custom-btn-sm-borderless:hover {
+        .custom-icon {
+          color: $white;
+        }
+      }
     }
   }
 }
