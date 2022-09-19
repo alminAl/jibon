@@ -60,7 +60,7 @@ const Work = () => {
 
             <div className="cmt-35">
               <Link to="/">
-                <button className="custom-btn-lg custom-btn-success">
+                <button className="custom-btn-lg custom-btn-orange">
                   read more
                 </button>
               </Link>

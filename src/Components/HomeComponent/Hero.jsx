@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import heroContent from "../../testData/sliderData.js";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const settings = {
@@ -31,9 +32,11 @@ const Hero = () => {
                   <h3 className="custom-sub-title cmt-10 cmb-10">
                     {heroSubTitle}
                   </h3>
-                  <button className="custom-btn-lg custom-btn-success cmy-20">
+                  <Link to="/">
+                  <button className="custom-btn-lg custom-btn-orange cmy-20">
                     donate now
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

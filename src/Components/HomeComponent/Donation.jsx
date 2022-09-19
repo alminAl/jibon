@@ -45,7 +45,7 @@ const Donation = () => {
                       />
                       <Link
                         to="/"
-                        className="input-group-text custom-btn-sm custom-btn-success"
+                        className="input-group-text custom-btn-sm custom-btn-orange"
                       >
                         donate now
                       </Link>

@@ -30,7 +30,7 @@ const Footer = () => {
                 />
                 <Link
                   to="/"
-                  className="input-group-text custom-btn-sm custom-btn-success"
+                  className="input-group-text custom-btn-sm custom-btn-orange"
                 >
                   join
                 </Link>
