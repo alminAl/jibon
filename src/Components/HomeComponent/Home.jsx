@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../ReuseComponent/Footer.jsx";
-import Navigation from "../ReuseComponent/Navigation.jsx";
 import BankInfo from "./BankInfo.jsx";
 import Donation from "./Donation.jsx";
 import Hero from "./Hero.jsx";
@@ -13,7 +11,6 @@ import Work from "./Work.jsx";
 const Home = () => {
   return (
     <>
-      <Navigation />
       <Hero />
       <Work />
       <Donation />
@@ -22,7 +19,6 @@ const Home = () => {
       <NewsEvents />
       <Success />
       <BankInfo />
-      <Footer />
     </>
   );
 };
