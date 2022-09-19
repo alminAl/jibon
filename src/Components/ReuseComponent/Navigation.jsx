@@ -44,11 +44,11 @@ const Navigation = () => {
                   our work
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to="/" className="custom-nav-link">
                   impact
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link to="/" className="custom-nav-link">
                   volunteer
