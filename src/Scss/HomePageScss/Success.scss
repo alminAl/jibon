@@ -1,4 +1,5 @@
 @import "../Framework.scss";
+
 #success-section {
   position: relative;
   padding: 50px 0;
@@ -13,11 +14,12 @@
     z-index: -1;
     background-color: $orange_rgba;
     transform: skewY(-5deg);
-    -webkit-transform: skewY(-5deg);
-    -moz-transform: skewY(-5deg);
-    -ms-transform: skewY(-5deg);
-    -o-transform: skewY(-5deg);
-}
+    // -webkit-transform: skewY(-5deg);
+    // -moz-transform: skewY(-5deg);
+    // -ms-transform: skewY(-5deg);
+    // -o-transform: skewY(-5deg);
+  }
+
   .cart-content {
     text-align: center;
     background-color: $white;
@@ -28,15 +30,18 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
     .custom-icon {
       font-size: 16px;
     }
+
     .custom-btn-sm-borderless:hover {
       .custom-icon {
         color: $white;
       }
     }
   }
+
   .cart-image {
     margin: 0 auto -80px auto;
     height: 160px;
@@ -44,10 +49,12 @@
     position: relative;
     border: 4px solid $white;
     border-radius: 50%;
+
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+
     img {
       position: absolute;
       height: 100%;
