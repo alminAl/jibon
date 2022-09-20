@@ -1,0 +1,13 @@
+@import "../Framework.scss";
+
+.dashboard-nav {
+  background-color: $success;
+  padding: 15px 0;
+
+  .brand-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $white;
+    margin: 0;
+  }
+}
