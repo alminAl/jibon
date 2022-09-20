@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "../../Scss/DashboardScss/Sidebar.scss";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -26,7 +27,31 @@ const Sidebar = () => {
           ></button>
         </div>
         {/* sidebar body */}
-        <div className="offcanvas-body">{/* sidebar menu will here */}</div>
+        <div className="offcanvas-body">
+          {/* sidebar menu will here */}
+          <ul className="navbar-nav text-center gap-2">
+            <li className="nav-item">
+              <Link to="profile" className="nav-link">
+                Profile
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="add-event" className="nav-link">
+                Add New Event
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="ongoing-events" className="nav-link">
+                Ongoing Events
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="previous-events" className="nav-link">
+                Previous Events
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,9 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import Dashboard from "./Components/Dashboard/Dashboard.jsx";
+import AddEvent from "./Components/DashboardComponent/AddEvent.jsx";
+import OngoingEvents from "./Components/DashboardComponent/OngoingEvents.jsx";
+import PreviousEvents from "./Components/DashboardComponent/PreviousEvents.jsx";
+import Profile from "./Components/DashboardComponent/Profile.jsx";
 import Error from "./Components/Error/Error.jsx";
 import Home from "./Components/HomeComponent/Home.jsx";
 import Footer from "./Components/ReuseComponent/Footer.jsx";
@@ -19,6 +23,10 @@ function App() {
 
         <Route path="dashboard" element={<Dashboard />}>
           {/* dashboard routes */}
+          <Route path="profile" element={<Profile />}></Route>
+          <Route path="add-event" element={<AddEvent />}></Route>
+          <Route path="ongoing-events" element={<OngoingEvents />}></Route>
+          <Route path="previous-events" element={<PreviousEvents />}></Route>
         </Route>
       </Routes>
 

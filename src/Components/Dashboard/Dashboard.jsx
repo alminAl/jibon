@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar.jsx";
 import "../../Scss/DashboardScss/Dashboard.scss";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const DashboardHome = () => {
   return (
@@ -14,9 +14,10 @@ const DashboardHome = () => {
           <Sidebar />
         </div>
       </div>
+      {/* Dashboard all content  */}
       <div className="dashboard-content">
-        <div>
-          <h1>dashboard content is going here</h1>
+        <div className="container">
+          <Outlet />
         </div>
       </div>
     </div>
