@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-      {/* navigation for all components */}
       {location.pathname.includes("dashboard") || <Navigation />}
 
       <Routes>
@@ -18,12 +17,11 @@ function App() {
         <Route index element={<Home />} />
         <Route path="*" element={<Error />} />
 
-        {/* dashboard routes */}
         <Route path="dashboard" element={<Dashboard />}>
-          {/*  */}
+          {/* dashboard routes */}
         </Route>
       </Routes>
-      {/* footer for all components */}
+
       {location.pathname.includes("dashboard") || <Footer />}
     </>
   );
