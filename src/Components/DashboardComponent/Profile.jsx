@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../DashboardComponent/profile.css";
 
 const Profile = () => {
@@ -51,9 +52,11 @@ const Profile = () => {
             </table>
           </div>
           <div className="text-center my-5">
-            <button className="btn mt-5 btn-outline-success">
-              Edit Profile
-            </button>
+            <Link to="edit">
+              <button className="btn mt-5 btn-outline-success">
+                Edit Profile
+              </button>
+            </Link>
           </div>
         </div>
       </div>

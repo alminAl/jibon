@@ -41,13 +41,8 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="ongoing-events" className="nav-link">
-                Ongoing Events
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="previous-events" className="nav-link">
-                Previous Events
+              <Link to="our-events" className="nav-link">
+                Our Events
               </Link>
             </li>
           </ul>
