@@ -18,7 +18,7 @@ const BankInfo = () => {
               <div className="col-md-6 col-lg-4" key={item.id}>
                 <div className="cart">
                   <div className="cart-body">
-                    <h4 className="cart-title fw-bold text-orange cmb-15">
+                    <h4 className="cart-title fw-bold text-success cmb-15">
                       {bankName}
                     </h4>
 

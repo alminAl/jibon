@@ -37,7 +37,7 @@
   letter-spacing: 0.5px;
   font-weight: 900;
   font-size: calc(100% + 1.5vw + 0.7vh);
-  color: $orange;
+  color: $success;
 }
 
 // todo **************** sub heading style [note: for only h3, h4, h5, h6 tag] ****************
@@ -66,7 +66,7 @@
 .custom-input {
   padding: 12px;
   background-color: transparent;
-  border: 1px solid $orange;
+  border: 1px solid $success;
   text-transform: capitalize;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -89,7 +89,7 @@
   font-size: 15px;
 
   &:hover {
-    color: $orange;
+    color: $success;
   }
 }
 
@@ -102,12 +102,12 @@
     text-transform: uppercase;
     font-size: 30px;
     text-decoration: none;
-    color: $orange;
+    color: $success;
     font-weight: 800;
     letter-spacing: 1px;
 
     &:hover {
-      color: $orange;
+      color: $success;
     }
   }
   .custom-nav-link {
@@ -115,12 +115,13 @@
     padding: 10px;
     margin: 8px 5px;
     text-decoration: none;
-    color: $light;
-    font-size: 15px;
+    color: $success;
+    font-size: 16px;
     letter-spacing: 1px;
 
     &:hover {
-      color: $orange;
+      color: $success;
+      
     }
   }
 }
@@ -135,7 +136,7 @@
     text-transform: uppercase;
     font-size: 30px;
     text-decoration: none;
-    color: $orange;
+    color: $success;
     font-weight: 800;
     letter-spacing: 1px;
 
@@ -153,7 +154,7 @@
     letter-spacing: 1px;
 
     &:hover {
-      color: $orange;
+      color: $success;
     }
   }
 }
@@ -202,8 +203,8 @@
   font-size: 15px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  border: 1px solid $orange;
-  color: $orange;
+  border: 1px solid $success;
+  color: $success;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -217,7 +218,7 @@
 
   &:hover {
     color: $white;
-    background-color: $orange;
+    background-color: $success;
   }
 }
 
@@ -230,7 +231,7 @@
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   //   border: 1px solid $dark;
-  color: $orange;
+  color: $success;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -244,7 +245,7 @@
 
   &:hover {
     color: $white;
-    background-color: $orange;
+    background-color: $success;
   }
 }
 // btn primary
@@ -272,13 +273,13 @@
 // btn orange
 .custom-btn-orange {
   text-decoration: none;
-  background-color: $orange;
-  border: 1px solid $orange;
+  background-color: $success;
+  border: 1px solid $success;
   color: $white;
 
   &:hover {
     background-color: transparent;
-    color: $orange;
+    color: $success;
   }
 }
 // btn info
@@ -328,13 +329,13 @@
 }
 // btn orange
 .custom-btn-orange {
-  background-color: $orange;
-  border: 1px solid $orange;
+  background-color: $success;
+  border: 1px solid $success;
   color: $white;
 
   &:hover {
     background-color: transparent;
-    color: $orange;
+    color: $success;
   }
 }
 // btn white
@@ -409,7 +410,7 @@
 .custom-icon-box {
   width: 45px;
   height: 45px;
-  border: 1px solid $orange;
+  border: 1px solid $success;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -424,21 +425,21 @@
   text-decoration: none;
   font-size: 22px;
   display: inline-block;
-  color: $orange;
+  color: $success;
 }
 
 // todo **************** several tag style ****************
 .custom-span-basic {
   text-transform: capitalize;
   font-size: 16px;
-  color: $orange;
+  color: $success;
 }
 .custom-span-pro {
   text-transform: capitalize;
   // display: inline-block;
   display: block;
   font-size: 18px;
-  color: $orange;
+  color: $success;
   font-weight: 400;
 }
 

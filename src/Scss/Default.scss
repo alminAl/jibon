@@ -3,7 +3,7 @@
 // ! color variant
 $primary: #1d2ee7;
 $secondary: #00a676;
-$success: #44b90e;
+$success: rgb(47, 204, 47);
 $lightSuccess: #60e224;
 $success_rgba: rgba(68, 185, 14, 0.6);
 // $success: #38b000;
@@ -18,7 +18,7 @@ $light_dark: #202c39;
 $black: #000000;
 $news_print: #e5e5e5;
 $orange: #d15b12;
-$orange_rgba: rgba(209, 91, 18, .6);
+$orange_rgba: rgba(209, 91, 18, 0.6);
 $light_gray: #8d99ae;
 
 // ! body background color
@@ -78,7 +78,7 @@ $custom-transition: ease-in-out 0.2s;
 .text-gray {
   color: $light_gray;
 }
-.text-orange{
+.text-orange {
   color: $orange;
 }
 

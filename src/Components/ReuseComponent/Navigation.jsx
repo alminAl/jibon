@@ -73,7 +73,9 @@ const Navigation = () => {
                 <Link
                   to="/"
                   className={
-                    scrolling ? "custom-btn-sm-reverse" : "custom-btn-sm custom-btn-orange"
+                    scrolling
+                      ? "custom-btn-sm-reverse"
+                      : "custom-btn-sm custom-btn-orange"
                   }
                 >
                   donate now
