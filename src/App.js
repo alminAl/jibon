@@ -1,24 +1,38 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Dashboard from "./Components/Dashboard/Dashboard.jsx";
+import AddEvent from "./Components/DashboardComponent/AddEvent.jsx";
+import EditProfile from "./Components/DashboardComponent/EditProfile.jsx";
+import OurEvents from "./Components/DashboardComponent/OurEvents.jsx";
+import Profile from "./Components/DashboardComponent/Profile.jsx";
 import Error from "./Components/Error/Error.jsx";
-import EventInfo from "./Components/EventComponent/EventInfo.jsx";
 import Home from "./Components/HomeComponent/Home.jsx";
 import Footer from "./Components/ReuseComponent/Footer.jsx";
 import Navigation from "./Components/ReuseComponent/Navigation.jsx";
-
+import EventHome from "./Components/EeventLatest/EventHome.jsx";
+import EventInfo from "./Components/EventComponent/EventInfo.jsx";
 function App() {
+  const location = useLocation();
+
   return (
     <>
-      {/* navigation for all components */}
-      <Navigation />
+      {location.pathname.includes("dashboard") || <Navigation />}
+
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/events" element={<EventInfo />} />
         <Route index element={<Home />} />
         <Route path="*" element={<Error />} />
+        <Route path="/events" element={<EventInfo />} />
+        <Route path="/test" element={<EventHome />}></Route>
+        <Route path="dashboard" element={<Dashboard />}>
+          {/* dashboard routes */}
+          <Route path="profile" element={<Profile />}></Route>
+          <Route path="profile/edit" element={<EditProfile />}></Route>
+          <Route path="add-event" element={<AddEvent />}></Route>
+          <Route path="our-events" element={<OurEvents />}></Route>
+        </Route>
       </Routes>
-    
-      {/* footer for all components */}
-      <Footer />
+
+      {location.pathname.includes("dashboard") || <Footer />}
     </>
   );
 }

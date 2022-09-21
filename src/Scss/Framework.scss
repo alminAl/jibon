@@ -97,6 +97,7 @@
 .custom-nav {
   background-color: transparent;
   padding: 15px 0;
+  z-index: 1;
 
   .custom-nav-brand {
     text-transform: uppercase;
@@ -107,7 +108,7 @@
     letter-spacing: 1px;
 
     &:hover {
-      color: $success;
+      color: $white;
     }
   }
   .custom-nav-link {
@@ -120,8 +121,7 @@
     letter-spacing: 1px;
 
     &:hover {
-      color: $success;
-      
+      color: $white;
     }
   }
 }

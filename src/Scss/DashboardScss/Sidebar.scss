@@ -1,0 +1,19 @@
+@import "../Framework.scss";
+
+.sidebar {
+  .toggle-bar {
+    font-size: 24px;
+    color: $white;
+  }
+
+  .offcanvas-header {
+    .btn-close {
+      font-size: 24px;
+      border: 1px solid $dark;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}

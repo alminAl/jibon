@@ -15,7 +15,7 @@ const Navigation = () => {
   window.addEventListener("scroll", navColorChange);
   return (
     <div
-      className={!scrolling ? "custom-nav fixed-top" : "scroll-nav sticky-top"}
+      className={!scrolling ? "custom-nav fixed-top" : "scroll-nav fixed-top"}
     >
       <nav className="navbar navbar-expand-xl">
         <div className="container">

@@ -1,0 +1,9 @@
+.img-div {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid blue;
+  box-shadow: 0px 0px 8px black;
+}
+.img-div img {
+  width: 100%;
+}
