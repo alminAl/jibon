@@ -26,8 +26,6 @@
     flex-basis: 25%;
     text-align: justify;
     color: white;
-    display: grid;
-    place-content: center;
     border-radius: 10px 0px 0px 10px;
     background-color: #E3424B;
     padding: 10px;
@@ -59,13 +57,17 @@
     padding: 20px;
 
     h6 {
-        font-size: 14px;
-        white-space: nowrap;
+        font-size: .8rem;
+        // white-space: nowrap;
         padding: 10px;
+        font-weight: 800;
+
     }
 
     span {
-        white-space: nowrap;
+        // white-space: nowrap;
+        font-size: .8rem;
+        font-weight: 700;
     }
 
 }
@@ -86,6 +88,6 @@
 }
 
 
-.Volunteer-btn {
-    button {}
-}
+
+
+//media quire for smaller device 
