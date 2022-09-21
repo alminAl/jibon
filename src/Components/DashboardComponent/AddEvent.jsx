@@ -2,8 +2,8 @@ import React from "react";
 
 const AddEvent = () => {
   return (
-    <div>
-      <h1>This is Add event components</h1>
+    <div className="cmt-100">
+      <h3 className="text-center custom-sub-title cmb-30">add events</h3>
     </div>
   );
 };

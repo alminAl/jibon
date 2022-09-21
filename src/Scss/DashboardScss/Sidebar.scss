@@ -3,7 +3,11 @@
 .sidebar {
   .toggle-bar {
     font-size: 24px;
-    color: $white;
+    color: $dark;
+  }
+
+  .offcanvas {
+    background-color: $light;
   }
 
   .offcanvas-header {
@@ -14,6 +18,17 @@
       &:hover {
         box-shadow: none;
       }
+    }
+  }
+
+  .custom-link {
+    font-size: 18px;
+    color: $dark !important;
+    padding: 12px 0;
+    font-weight: 600;
+    &:hover {
+      background-color: $success;
+      color: $light !important;
     }
   }
 }

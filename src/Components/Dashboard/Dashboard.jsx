@@ -6,7 +6,7 @@ import { Link, Outlet } from "react-router-dom";
 const DashboardHome = () => {
   return (
     <div className="dashboard">
-      <div className="dashboard-nav">
+      <div className="dashboard-nav sticky-top">
         <div className="container d-flex justify-content-between align-items-center">
           <Link to="/" className="custom-link">
             <h3 className="brand-name">JIBON</h3>
@@ -15,16 +15,11 @@ const DashboardHome = () => {
         </div>
       </div>
 
-      {/* <div className="dashboard-content">
-<<<<<<< HEAD
-        <div>
-          <h1>dashboard content is going here.</h1>
-=======
+      <div className="dashboard-content">
         <div className="container">
           <Outlet />
->>>>>>> 4b49e10fc8e5505420621b835210cfde6868ee7f
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

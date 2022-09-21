@@ -1,28 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../DashboardComponent/profile.css";
+import "../../Scss/DashboardScss/Profile.scss";
 
 const Profile = () => {
   return (
-    <div className="py-5">
-      <div className="row g-4">
+    <div className="profile">
+      <div className="row justify-content-between g-4">
         <div className="col-md-4">
-          <div className="px-3 ">
-            <div className="img-div">
-              <img
-                src="https://pbs.twimg.com/media/EYVxlOSXsAExOpX.jpg"
-                alt=""
-              />
-            </div>
-            <div className="mt-4 text-center">
-              <h6 className="text-success fw-bold">Mashrafi Bin Mortaza</h6>
-              <h6 className="text-primary fw-bolder">Admin</h6>
+          <div className="img-div text-center">
+            <img src="https://pbs.twimg.com/media/EYVxlOSXsAExOpX.jpg" alt="" />
+            <div className="cmt-20">
+              <h5 className="">Mashrafi Bin Mortaza</h5>
+              <h6 className="text-orange">Admin</h6>
             </div>
           </div>
         </div>
-        <div className="col-md-8">
-          <div className="mb-4">
-            <h2>Additional Details</h2>
+        <div className="col-md-7">
+          <div className="cmb-20">
+            <h3 className="fw-bold">Additional Details</h3>
             <hr />
           </div>
           <div>
@@ -51,9 +46,9 @@ const Profile = () => {
               </tbody>
             </table>
           </div>
-          <div className="text-center my-5">
+          <div className="">
             <Link to="edit">
-              <button className="btn mt-5 btn-outline-success">
+              <button className="custom-btn-lg custom-btn-primary cmt-20">
                 Edit Profile
               </button>
             </Link>

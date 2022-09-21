@@ -12,8 +12,7 @@ const BankInfo = () => {
 
         <div className="row g-4">
           {bankData.map((item) => {
-            const {  accountNo, bankName, branchCode, iban, swift } =
-              item;
+            const { accountNo, bankName, branchCode, iban, swift } = item;
             return (
               <div className="col-md-6 col-lg-4" key={item.id}>
                 <div className="cart">

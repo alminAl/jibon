@@ -108,7 +108,7 @@
     letter-spacing: 1px;
 
     &:hover {
-      color: $white;
+      color: $danger;
     }
   }
   .custom-nav-link {
@@ -121,7 +121,7 @@
     letter-spacing: 1px;
 
     &:hover {
-      color: $white;
+      color: $danger;
     }
   }
 }
@@ -156,6 +156,19 @@
 
     &:hover {
       color: $success;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .custom-nav,
+  .scroll-nav {
+    background-color: $white;
+
+    .custom-nav-link {
+      margin: 5px 0;
+      display: block;
+      padding: 5px 0;
     }
   }
 }
@@ -274,13 +287,13 @@
 // btn orange
 .custom-btn-orange {
   text-decoration: none;
-  background-color: $success;
-  border: 1px solid $success;
+  background-color: $orange;
+  border: 1px solid $orange;
   color: $white;
 
   &:hover {
     background-color: transparent;
-    color: $success;
+    color: $orange;
   }
 }
 // btn info
@@ -713,6 +726,12 @@
   margin-top: 45px;
 }
 .cmt-50 {
+  margin-top: 50px;
+}
+.cmt-100 {
+  margin-top: 50px;
+}
+.cmt-120 {
   margin-top: 50px;
 }
 

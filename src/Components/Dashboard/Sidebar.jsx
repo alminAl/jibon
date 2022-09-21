@@ -26,22 +26,21 @@ const Sidebar = () => {
             aria-label="Close"
           ></button>
         </div>
-        {/* sidebar body */}
-        <div className="offcanvas-body">
-          {/* sidebar menu */}
+        
+        <div className="offcanvas-body px-0">
           <ul className="navbar-nav text-center gap-2">
             <li className="nav-item">
-              <Link to="/dashboard" className="nav-link">
+              <Link to="/dashboard" className="nav-link custom-link">
                 Profile
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="add-event" className="nav-link">
+              <Link to="add-event" className="nav-link custom-link">
                 Add New Event
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="our-events" className="nav-link">
+              <Link to="our-events" className="nav-link custom-link">
                 Our Events
               </Link>
             </li>
