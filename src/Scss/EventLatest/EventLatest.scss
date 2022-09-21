@@ -1,0 +1,93 @@
+@import "../Framework.scss";
+
+
+.card-inneer-container {
+
+    display: flex;
+
+
+
+}
+
+
+.event-card {
+
+
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+    // background-color: aqua;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+
+.date-container {
+    flex-basis: 25%;
+    text-align: justify;
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #E3424B;
+    padding: 10px;
+
+    h5 {
+        font-size: 16px;
+        font-weight: 900;
+    }
+}
+
+.event-img-container {
+    flex-basis: 35%;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+}
+
+.event-info-container {
+
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    h6 {
+        font-size: .8rem;
+        // white-space: nowrap;
+        padding: 10px;
+        font-weight: 800;
+
+    }
+
+    span {
+        // white-space: nowrap;
+        font-size: .8rem;
+        font-weight: 700;
+    }
+
+}
+
+.even-latest-main-componenet {
+
+
+    padding: 10px;
+}
+
+.outer-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+
+    // place-content: center;
+}
+
+
+
+
+//media quire for smaller device 
