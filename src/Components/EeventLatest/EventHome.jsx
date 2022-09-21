@@ -8,7 +8,7 @@ const EventHome = () => {
         <div>
             <Navigation ></Navigation>
             <EvenLatest ></EvenLatest>
-            <Footer></Footer>
+
         </div>
     );
 };
