@@ -42,7 +42,7 @@ const EvenLatest = () => {
                             <div key={item.id} className=" col-lg-4 col-md-6 col-sm-12 col-xs-12 gx-5">
                                 <div className='event-card'>
                                     <div className="card-inneer-container ">
-                                        <div style={{ backgroundColor: random_color }} className="date-container text-center pt-2"><h5>{item.date} <br />{item.month}</h5></div>
+                                        <div style={{ backgroundColor: random_color }} className="date-container text-center d-flex align-items-center justify-content-cente pt-2"><h5>{item.date} <br />{item.month}</h5></div>
                                         <div className="event-img-container img-fluid"><img src="https://www.zindagitrust.org/img/sections/1n.jpg" alt="" srcset="" /></div>
                                         <div className="event-info-container"><h6>{item.title}   </h6>
                                             <span><span style={{ verticalAlign: "baseline" }}>  <FontAwesomeIcon icon={faLocationCrosshairs} /> Chittagong</span> <br /><span style={{ verticalAlign: "baseline" }}>  <FontAwesomeIcon icon={faClock} /> 11 am</span></span>
