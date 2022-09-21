@@ -8,7 +8,8 @@ import Error from "./Components/Error/Error.jsx";
 import Home from "./Components/HomeComponent/Home.jsx";
 import Footer from "./Components/ReuseComponent/Footer.jsx";
 import Navigation from "./Components/ReuseComponent/Navigation.jsx";
-
+import EventHome from "./Components/EeventLatest/EventHome.jsx";
+import EventInfo from "./Components/EventComponent/EventInfo.jsx";
 function App() {
   const location = useLocation();
 
@@ -20,7 +21,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route index element={<Home />} />
         <Route path="*" element={<Error />} />
-
+        <Route path="/events" element={<EventInfo />} />
+        <Route path="/test" element={<EventHome />}></Route>
         <Route path="dashboard" element={<Dashboard />}>
           {/* dashboard routes */}
           <Route index element={<Profile />}></Route>
