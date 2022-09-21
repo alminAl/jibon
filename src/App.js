@@ -26,7 +26,6 @@ function App() {
         <Route path="dashboard" element={<Dashboard />}>
           {/* dashboard routes */}
           <Route index element={<Profile />}></Route>
-          <Route path="profile" element={<Profile />}></Route>
           <Route path="edit" element={<EditProfile />}></Route>
           <Route path="add-event" element={<AddEvent />}></Route>
           <Route path="our-events" element={<OurEvents />}></Route>

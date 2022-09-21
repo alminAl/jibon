@@ -31,7 +31,7 @@ const Sidebar = () => {
           {/* sidebar menu will here */}
           <ul className="navbar-nav text-center gap-2">
             <li className="nav-item">
-              <Link to="profile" className="nav-link">
+              <Link to="/dashboard" className="nav-link">
                 Profile
               </Link>
             </li>
