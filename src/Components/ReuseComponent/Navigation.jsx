@@ -70,6 +70,11 @@ const Navigation = () => {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link to="/events" className="custom-nav-link">
+                 Events
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link
                   to="/"
                   className={
