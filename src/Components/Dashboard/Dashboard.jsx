@@ -16,7 +16,7 @@ const DashboardHome = () => {
       </div>
       <div className="dashboard-content">
         <div>
-          <h1>dashboard content is going here</h1>
+          <h1>dashboard content is going here.</h1>
         </div>
       </div>
     </div>
