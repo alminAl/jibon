@@ -10,6 +10,8 @@ import Footer from "./Components/ReuseComponent/Footer.jsx";
 import Navigation from "./Components/ReuseComponent/Navigation.jsx";
 import EventHome from "./Components/EeventLatest/EventHome.jsx";
 import EventInfo from "./Components/EventComponent/EventInfo.jsx";
+import UserProfile from "./Components/UserProfile/UserProfile.jsx";
+
 function App() {
   const location = useLocation();
 
@@ -29,6 +31,7 @@ function App() {
           <Route path="add-event" element={<AddEvent />}></Route>
           <Route path="our-events" element={<OurEvents />}></Route>
         </Route>
+        <Route path="user" element={<UserProfile />}></Route>
         {/* error route */}
         <Route path="*" element={<Error />} />
       </Routes>
