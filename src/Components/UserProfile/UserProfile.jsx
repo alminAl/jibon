@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../Scss/UserProfileScss/UserProfile.scss";
 const UserProfile = () => {
   return (
@@ -20,61 +21,61 @@ const UserProfile = () => {
                   <div>
                     <h4>Ashraful Islam</h4>
                     <h6 className="text-muted">Role: Admin</h6>
-                    <p class="text-secondary mb-1">Full Stack Developer</p>
-                    <p class="text-muted font-size-sm">
+                    <p className="text-secondary mb-1">Full Stack Developer</p>
+                    <p className="text-muted font-size-sm">
                       Bay Area, San Francisco, CA
                     </p>
-                    <button class="btn btn-primary me-2">Call</button>
-                    <button class="btn btn-outline-primary">Message</button>
+                    <button className="btn btn-primary me-2">Call</button>
+                    <button className="btn btn-outline-primary">Message</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-8">
-            <div class="card border-0 mb-3">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-3">
-                    <h6 class="mb-0">Full Name</h6>
+          <div className="col-md-8">
+            <div className="card border-0 mb-3">
+              <div className="card-body">
+                <div className="row">
+                  <div className="col-sm-3">
+                    <h6 className="mb-0">Full Name</h6>
                   </div>
 
-                  <div class="col-sm-9 text-secondary">Kenneth Valdez</div>
+                  <div className="col-sm-9 text-secondary">Kenneth Valdez</div>
                 </div>
                 <hr />
-                <div class="row">
-                  <div class="col-sm-3">
-                    <h6 class="mb-0">Email</h6>
+                <div className="row">
+                  <div className="col-sm-3">
+                    <h6 className="mb-0">Email</h6>
                   </div>
-                  <div class="col-sm-9 text-secondary">
+                  <div className="col-sm-9 text-secondary">
                     ashrafulislam21211@gmail.com
                   </div>
                 </div>
 
                 <hr />
-                <div class="row">
-                  <div class="col-sm-3">
-                    <h6 class="mb-0">Phone</h6>
+                <div className="row">
+                  <div className="col-sm-3">
+                    <h6 className="mb-0">Phone</h6>
                   </div>
-                  <div class="col-sm-9 text-secondary">+8801750514197</div>
+                  <div className="col-sm-9 text-secondary">+8801750514197</div>
                 </div>
 
                 <hr />
-                <div class="row">
-                  <div class="col-sm-3">
-                    <h6 class="mb-0">Facebook ID</h6>
+                <div className="row">
+                  <div className="col-sm-3">
+                    <h6 className="mb-0">Facebook ID</h6>
                   </div>
-                  <div class="col-sm-9 text-secondary">
+                  <div className="col-sm-9 text-secondary">
                     www.facebook.com/sayem21
                   </div>
                 </div>
 
                 <hr />
-                <div class="row">
-                  <div class="col-sm-3">
-                    <h6 class="mb-0">Full Name</h6>
+                <div className="row">
+                  <div className="col-sm-3">
+                    <h6 className="mb-0">Full Name</h6>
                   </div>
-                  <div class="col-sm-9 text-secondary">
+                  <div className="col-sm-9 text-secondary">
                     <address>House 27/3,Vatar,Dhaka,Bangladesh</address>
                   </div>
                 </div>
@@ -82,9 +83,14 @@ const UserProfile = () => {
                 <hr />
                 <div className="row">
                   <div className="col-sm-12">
-                    <a class="btn btn-info px-4 " target="__blank" href="#/">
+                    <Link
+                      to="/"
+                      className="btn btn-info px-4 "
+                      target="__blank"
+                      href="#/"
+                    >
                       Edit
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
