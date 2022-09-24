@@ -64,11 +64,19 @@ const Navigation = () => {
                   career
                 </Link>
               </li>
+
+
               <li className="nav-item">
                 <Link to="/" className="custom-nav-link">
                   contact
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/login" className="custom-nav-link ">
+                  Login
+                </Link>
+              </li>
+
               <li className="nav-item">
                 <Link
                   to="/"
