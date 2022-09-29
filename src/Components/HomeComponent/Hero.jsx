@@ -25,24 +25,22 @@ const Hero = () => {
         const { id, heroTitle, heroSubTitle, image } = item;
         return (
           <div id="hero-section" key={id}>
-            <div className="hero-section">
-              <div className="text-center text-light">
-                <div className="container">
-                  <h1 className="custom-title">{heroTitle}</h1>
-                  <h3 className="custom-sub-title cmt-10 cmb-10">
-                    {heroSubTitle}
-                  </h3>
-                  <Link to="/">
-                  <button className="custom-btn-lg custom-btn-orange cmy-20">
-                    donate now
-                  </button>
-                  </Link>
-                </div>
+            <div className="hero-content">
+              <div className="container">
+                <h1 className="custom-title">{heroTitle}</h1>
+                <h3 className="custom-sub-title cmt-10 cmb-10">
+                  {heroSubTitle}
+                </h3>
+                <Link
+                  to="/"
+                  type="button"
+                  className="custom-btn-lg custom-btn-orange cmy-20"
+                >
+                  donate now
+                </Link>
               </div>
             </div>
-            <div className="background-img">
-              <img src={image} className="img-fluid" alt="img" />
-            </div>
+            <img src={image} className="img-fluid hero-bg-img" alt="img" />
           </div>
         );
       })}
